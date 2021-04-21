@@ -1,19 +1,14 @@
 {
-  "name": "vue-credit-card-field",
+  "name": "vue-credit-card-field-cinob",
   "description": "A generic Bootstrap 4 capatible credit card field that mimics Stripe's behavior.",
-  "version": "0.3.14",
+  "version": "0.1.2",
   "module": "./src/index.js",
   "main": "./dist/VueCreditCardField.umd.min.js",
   "scripts": {
     "commit": "git add -A && git commit -m 'Pre-release commit';",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "pre-release": "npm run build; git add . -A; git commit -m 'pre-release commit'",
-    "release-patch": "npm run pre-release && npm version patch && npm run release;",
-    "release-minor": "npm run pre-release && npm version minor && npm run release;",
-    "release-major": "npm run pre-release && npm version major && npm run release;",
-    "release": "npm publish; git add . -A; git commit; git push --tags"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",

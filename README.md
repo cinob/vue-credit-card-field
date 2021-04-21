@@ -1,20 +1,13 @@
-# vue-credit-card-field
+# vue-credit-card-field-cinob
 
-This repository is a collection of Vue components for credit card field UI's. As time goes on and trends change, the best credit card UI tends to change. All of the components are fully compatible with Bootstrap 4. 
-
-## Features
-
-- Fully compatible and designed for Bootstrap 4
-- Extensible and written in ES6
-- Responsive for mobile, tablets, and desktop
-- Inline error handling and client side validation fields on a form
-
----
+This repository is base on [vue-credit-card-field](https://github.com/actengage/vue-credit-card-field), Configurable `zip` options for `InlineCreditCardField` 
 
 ## Installation
 
 #### NPM
-    npm install vue-credit-card-field --save
+    npm install vue-credit-card-field-cinob --save
+#### YARN
+    yarn add vue-credit-card-field-cinob
 
 ----
 
@@ -39,7 +32,7 @@ This is the standard credit card field. It has individual fields and not based o
 
 ![Basic Usage Example](screenshots/credit-card-field.gif)
 
-    <credit-card-field v-model="card"></credit-card-field>
+    <CreditCardField v-model="card" />
 
 ---
 
@@ -51,5 +44,5 @@ This field mimics Stripe's elements UI. It works well unless the space is too na
 
 ![Error Handling Example](screenshots/error-handling.gif)
 
-    <inline-credit-card-field v-model="card"></inline-credit-card-field>
+    <InlineCreditCardField :showZip="true" v-model="card" />
 
