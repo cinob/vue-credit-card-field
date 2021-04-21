@@ -48,7 +48,7 @@
         <hr>
 
         <h3>Sizes</h3>
-        
+
         <inline-credit-card-field size="sm"></inline-credit-card-field>
         <inline-credit-card-field size="md"></inline-credit-card-field>
         <inline-credit-card-field size="lg"></inline-credit-card-field>
@@ -121,24 +121,24 @@
 </template>
 
 <script>
-import InlineCreditCardField from '../src/Components/InlineCreditCardField';
+import InlineCreditCardField from '../src/Components/InlineCreditCardField'
 
 export default {
 
-    components: {
-        InlineCreditCardField
-    },
+  components: {
+    InlineCreditCardField
+  },
 
-    data() {
-        return {
-            card: {},
-            showActivity: false,
-            lastChangeEvent: null,
-            lastValidEvent: null,
-            lastInvalidEvent: null,
-            lastCompleteEvent: null
-        }
+  data () {
+    return {
+      card: {},
+      showActivity: false,
+      lastChangeEvent: null,
+      lastValidEvent: null,
+      lastInvalidEvent: null,
+      lastCompleteEvent: null
     }
+  }
 
 }
 </script>

@@ -1,8 +1,8 @@
-export default function shouldFormat(e) {
-    return (
-        !e.altKey &&
+export default function shouldFormat (e) {
+  return (
+    !e.altKey &&
         !e.ctrlKey &&
-        !e.metaKey && 
+        !e.metaKey &&
         !e.shiftyKey
-    );
+  )
 };

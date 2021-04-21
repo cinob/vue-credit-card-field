@@ -36,40 +36,40 @@
 </template>
 
 <script>
-import CreditCardField from '../src/Components/CreditCardField';
+import CreditCardField from '../src/Components/CreditCardField'
 
 export default {
 
-    components: {
-        CreditCardField
+  components: {
+    CreditCardField
+  },
+
+  methods: {
+
+    onChange () {
+      // console.log('change', arguments);
     },
 
-    methods: {
+    onValid (e) {
+      this.activity = true
 
-        onChange() {
-            // console.log('change', arguments);
-        },
-
-        onValid(e) {
-            this.activity = true;
-
-            setTimeout(() => {
-                this.activity = false;
-            }, 1000);
-        },
-
-        onInvalid() {
-            // console.log('invalid', arguments)
-        }
-
+      setTimeout(() => {
+        this.activity = false
+      }, 1000)
     },
 
-    data() {
-        return {
-            card: {},
-            activity: false
-        }
+    onInvalid () {
+      // console.log('invalid', arguments)
     }
+
+  },
+
+  data () {
+    return {
+      card: {},
+      activity: false
+    }
+  }
 
 }
 </script>

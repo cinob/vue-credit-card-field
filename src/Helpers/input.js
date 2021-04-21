@@ -1,3 +1,3 @@
-export default function input(el) {
-    return el.querySelector('input, textarea, select') || el;
+export default function input (el) {
+  return el.querySelector('input, textarea, select') || el
 }
